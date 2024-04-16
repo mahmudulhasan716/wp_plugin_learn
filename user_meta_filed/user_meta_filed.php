@@ -172,17 +172,6 @@ function my_custom_menu_profile() {
 <?php 
 
 
-    // // Display form
-    // echo '<h2>My Custom Menu</h2>';
-    // echo '<form method="post">';
-    // echo '<label for="billing_address">Billing Address:</label><br />';
-    // echo '<input type="text" id="billing_address" name="first_name" value="' . esc_attr($first_name) . '" /><br />';
-    // echo '<label for="shipping_address">Shipping Address:</label><br />';
-    // echo '<input type="text" id="shipping_address" name="last_name" value="' . esc_attr($last_name) . '" /><br />';
-    // echo '<input type="submit" name="update_profile" value="Update Profile" />';
-    // echo '</form>';
-
-
 }
 
 

@@ -33,6 +33,9 @@ function form_datalist() {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Number</th>
+                <th>zip_code</th>
+                <th>Link</th>
+                <th>Description</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -41,9 +44,12 @@ function form_datalist() {
     foreach ($datalist as $data) {
         $output .= '
         <tr>
-            <td>' . $data->name . '</td>
-            <td>' . $data->email . '</td>
-            <td>' . $data->phone . '</td>
+            <td>' . esc_html($data->name) . '</td>
+            <td>' . esc_attr($data->email)  . '</td>
+            <td>' . esc_attr($data->phone)   . '</td>
+            <td>' . esc_attr($data->zip_code). '</td>
+            <td>' . esc_attr($data->link)  . '</td>
+            <td>' . esc_attr( $data->description) . '</td>
             <td>
                 <a href="?edit_id=' . $data->id . '">Edit</a>
                 <a href="?delete_id=' . $data->id . '">Delete</a>

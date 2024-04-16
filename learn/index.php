@@ -4,27 +4,7 @@
  * Plugin Name: WP Learn
  */
 
-// add_action('init', 'callbackFunction');
 
-// if (!function_exists('callbackFunction')) {
-
-//     function callbackFunction()
-//     {
-//         //code will write 
-//     }
-// }
-
-
-// if (!function_exists('ChangeTitle')) {
-//     function ChangeTitle($title)
-//     {
-//         return "mamun " . $title . " learning";
-//     }
-// }
-
-// add_filter('the_title');
-
-//
 
 
 register_activation_hook(__FILE__,'crate_table');
@@ -48,6 +28,9 @@ function crate_table(){
         name varchar(100) NOT NULL,
         email varchar(100) NOT NULL,
         phone   int(12) NULL,
+        description varchar(255) NULL,
+        zip_code int(10) NULL,
+        link varchar(255) NULL,
         PRIMARY KEY  (id)
        
     ) $charset_collate;";
